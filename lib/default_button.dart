@@ -2,7 +2,6 @@
 import 'package:flutter/material.dart';
 import 'package:phase1_example/size_config.dart';
 
-import 'constant.dart';
 
 class DefaultButton extends StatelessWidget {
   const DefaultButton({Key? key, required this.text, required this.press, required this.color}) : super(key: key);
@@ -13,7 +12,7 @@ class DefaultButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: 150,
+      width: SizeConfig.heightMultiplier! * 20,
       height: SizeConfig.heightMultiplier! * 6,
       child: FlatButton(
           color: color,
